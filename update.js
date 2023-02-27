@@ -12,7 +12,7 @@ export const main = handler(async (event, context) => {
         UpdateExpression: "SET title = :title, attachment = :attachment",
         ExpressionAttributeValues: {
             ":attachment": data.attachment || null,
-            ":title": data.content || null
+            ":title": data.title || null
         },
         ReturnValues: "ALL_NEW"
     };
