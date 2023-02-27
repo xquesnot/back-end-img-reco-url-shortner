@@ -14,6 +14,7 @@ export function main(event, context, callback) {
             imageID: uuid.v1(),
             title:  data.title,
             attachment: data.attachment,
+            prediction : data.prediction,
             createdAt: Date.now()
         }
     };
