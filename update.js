@@ -9,10 +9,10 @@ export const main = handler(async (event, context) => {
             userID: event.requestContext.identity.cognitoIdentityId,
             imageID: event.pathParameters.id
         },
-        UpdateExpression: "SET content = :content, attachment = :attachment",
+        UpdateExpression: "SET title = :content, attachment = :attachment",
         ExpressionAttributeValues: {
             ":attachment": data.attachment || null,
-            ":content": data.content || null
+            ":title": data.content || null
         },
         ReturnValues: "ALL_NEW"
     };
