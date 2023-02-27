@@ -10,8 +10,9 @@ export function main(event, context, callback) {
     const params = {
         TableName: process.env.tableName,
         Item: {
-            userId: event.requestContext.identity.cognitoIdentityId,
-            imageId: uuid.v1(),
+            userID: event.requestContext.identity.cognitoIdentityId,
+            imageID: uuid.v1(),
+            title:  data.title,
             attachment: data.attachment,
             createdAt: Date.now()
         }
