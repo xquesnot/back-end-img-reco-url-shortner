@@ -1,0 +1,13 @@
+{
+  "name": "back-end-img-reco-url-shortner",
+  "version": "1.0.0",
+  "dependencies": {
+    "aws-sdk": "^2.1323.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "serverless-bundle": "^6.0.0",
+    "serverless-dotenv-plugin": "^4.0.2",
+    "serverless-offline": "^12.0.4"
+  }
+}
